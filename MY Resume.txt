@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Resume</title>
+    <script>
+        window.onload = function() {
+            var jobTitles = [
+                "Data Analyst",
+                "Database Associate",
+                "Data Service Analyst",
+                "Admin",
+                "MIS Executive"
+            ];
+            var index = 0;
+            var textElement = document.getElementById("jobTitle");
+
+            function displayJobTitle() {
+                var currentTitle = jobTitles[index];
+                var letters = currentTitle.split("");
+                var i = 0;
+                var intervalId = setInterval(function() {
+                    textElement.innerHTML += letters[i];
+                    i++;
+                    if (i === letters.length) {
+                        clearInterval(intervalId);
+                        setTimeout(function() {
+                            textElement.innerHTML = "I am ";
+                            index = (index + 1) % jobTitles.length;
+                            setTimeout(displayJobTitle, 2000);
+                        }, 2000);
+                    }
+                }, 100);
+            }
+
+            displayJobTitle();
+        };
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Prudhvi Reddy</h1>
+        <p>Address: KPHB, Hyderabad, Telangana, TS 500090</p>
+        <p>Contact: +91-9347325127</p>
+        <p>Email: Prudhvireddygudimetla@gmail.com</p>
+    </header>
+
+    <h2><span id="jobTitle">I am </span></h2>
+
+    <section>
+        <h2>SKILLS</h2>
+        <ul>
+            <li>C Programming Language</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>OOPs Concepts</li>
+            <li>HTML</li>
+            <li>Concepts of Data Algorithms</li>
+            <li>Basics of Machine Learning</li>
+            <li>Pivot Tables</li>
+            <li>Microsoft SQL</li>
+            <li>MS Office</li>
+            <li>MS Excel</li>
+            <li>SQL/PLSQL</li>
+            <li>ETL</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>EDUCATION</h2>
+        <h3>NRI Junior College, Hyderabad — Intermediate (MPC)</h3>
+        <p>June 2016 - March 2018</p>
+        <h3>DRK Institute of Science and Technology, Hyderabad — Computer Science and Engineering (CSE)</h3>
+        <p>June 2018 - August 2022</p>
+    </section>
+
+    <section>
+        <h2>EXPERIENCE</h2>
+        <h3>Tek One, Hyderabad — Junior MIS Executive</h3>
+        <p>March 2022 - PRESENT</p>
+        <ul>
+            <li>Produced tables, pivot reports and charts for use in key decision-making processes.</li>
+            <li>Worked closely with management teams to plan, develop, coordinate and execute technical strategies aligned to client's vision, mission and purpose.</li>
+            <li>Administered, supported and monitored databases by proactively resolving database issues.</li>
+            <li>Generated Daily/Monthly/Yearly and Festival reports by using advanced excel functions.</li>
+            <li>Monitored customer payment details and identified and investigated non-payments, delayed payments, and other irregular</li>
+            <li>Monitored customer payment details and identified and investigated non-payments, delayed payments, and other irregularities.</li>
+            <li>Performed recovery and backup of database servers and distributed server backup during emergencies.</li>
+            <li>Planned and implemented security measures to safeguard vital business data.</li>
+        </ul>
+    </section>
+<section>
+    <h2>ACADEMIC PROJECTS</h2>
+    <h3>STRESS DETECTION IN IT PROFESSIONALS BY IMAGE PROCESSING USING MACHINE LEARNING</h3>
+    <ul>
+      <li>The main motive of our project is to detect stress in IT professionals using vivid Machine learning and Image processing techniques.</li>
+      <li>Our system is an upgraded version of the old stress detection systems, which excluded live detection and personal counseling. This system comprises live detection and periodic analysis of employees, detecting physical as well as mental stress levels and providing them with proper remedies for managing stress through periodic survey forms.</li>
+      <li>Our system mainly focuses on managing stress, making the working environment healthy and spontaneous for employees, and optimizing their productivity during working hours.</li>
+    </ul>
+    <h3>Design of a Cloud Storage Security Encryption Algorithm for Power Bidding Systems</h3>
+    <ul>
+      <li>To solve the problem of poor security and performance caused by traditional encryption algorithms in the cloud data storage of power bidding systems, we propose a hybrid encryption method based on symmetric encryption and asymmetric encryption.</li>
+      <li>In this method, the plaintext upload file is divided into several blocks according to the proportion. The large file block is encrypted by the symmetric encryption algorithm AES to ensure encryption performance, and the small file block and AES key are encrypted by the asymmetric encryption algorithm ECC to ensure file encryption strength and the security of key transmission.</li>
+      <li>Finally, the ciphertext file is generated and stored in the cloud storage environment to prevent sensitive file pieces from being stolen or destroyed.</li>
+      <li>The experimental results show that the hybrid encryption method can improve the anti-attack ability of cloud storage files, ensure the security of file storage, and have high efficiency in file upload and download.</li>
+    </ul>
+  </section>
+</body>
+</html>
+</body>
+</html>
