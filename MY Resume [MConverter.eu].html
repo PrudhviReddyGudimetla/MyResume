@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.4.3.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;My Resume&lt;/title&gt;
+    &lt;script&gt;
+        window.onload = function() {
+            var jobTitles = [
+                &quot;Data Analyst&quot;,
+                &quot;Database Associate&quot;,
+                &quot;Data Service Analyst&quot;,
+                &quot;Admin&quot;,
+                &quot;MIS Executive&quot;
+            ];
+            var index = 0;
+            var textElement = document.getElementById(&quot;jobTitle&quot;);
+
+            function displayJobTitle() {
+                var currentTitle = jobTitles[index];
+                var letters = currentTitle.split(&quot;&quot;);
+                var i = 0;
+                var intervalId = setInterval(function() {
+                    textElement.innerHTML += letters[i];
+                    i++;
+                    if (i === letters.length) {
+                        clearInterval(intervalId);
+                        setTimeout(function() {
+                            textElement.innerHTML = &quot;I am &quot;;
+                            index = (index + 1) % jobTitles.length;
+                            setTimeout(displayJobTitle, 2000);
+                        }, 2000);
+                    }
+                }, 100);
+            }
+
+            displayJobTitle();
+        };
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Prudhvi Reddy&lt;/h1&gt;
+        &lt;p&gt;Address: KPHB, Hyderabad, Telangana, TS 500090&lt;/p&gt;
+        &lt;p&gt;Contact: +91-9347325127&lt;/p&gt;
+        &lt;p&gt;Email: Prudhvireddygudimetla@gmail.com&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;h2&gt;&lt;span id=&quot;jobTitle&quot;&gt;I am &lt;/span&gt;&lt;/h2&gt;
+
+    &lt;section&gt;
+        &lt;h2&gt;SKILLS&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;C Programming Language&lt;/li&gt;
+            &lt;li&gt;C++&lt;/li&gt;
+            &lt;li&gt;Java&lt;/li&gt;
+            &lt;li&gt;JavaScript&lt;/li&gt;
+            &lt;li&gt;OOPs Concepts&lt;/li&gt;
+            &lt;li&gt;HTML&lt;/li&gt;
+            &lt;li&gt;Concepts of Data Algorithms&lt;/li&gt;
+            &lt;li&gt;Basics of Machine Learning&lt;/li&gt;
+            &lt;li&gt;Pivot Tables&lt;/li&gt;
+            &lt;li&gt;Microsoft SQL&lt;/li&gt;
+            &lt;li&gt;MS Office&lt;/li&gt;
+            &lt;li&gt;MS Excel&lt;/li&gt;
+            &lt;li&gt;SQL/PLSQL&lt;/li&gt;
+            &lt;li&gt;ETL&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/section&gt;
+
+    &lt;section&gt;
+        &lt;h2&gt;EDUCATION&lt;/h2&gt;
+        &lt;h3&gt;NRI Junior College, Hyderabad — Intermediate (MPC)&lt;/h3&gt;
+        &lt;p&gt;June 2016 - March 2018&lt;/p&gt;
+        &lt;h3&gt;DRK Institute of Science and Technology, Hyderabad — Computer Science and Engineering (CSE)&lt;/h3&gt;
+        &lt;p&gt;June 2018 - August 2022&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section&gt;
+        &lt;h2&gt;EXPERIENCE&lt;/h2&gt;
+        &lt;h3&gt;Tek One, Hyderabad — Junior MIS Executive&lt;/h3&gt;
+        &lt;p&gt;March 2022 - PRESENT&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Produced tables, pivot reports and charts for use in key decision-making processes.&lt;/li&gt;
+            &lt;li&gt;Worked closely with management teams to plan, develop, coordinate and execute technical strategies aligned to client's vision, mission and purpose.&lt;/li&gt;
+            &lt;li&gt;Administered, supported and monitored databases by proactively resolving database issues.&lt;/li&gt;
+            &lt;li&gt;Generated Daily/Monthly/Yearly and Festival reports by using advanced excel functions.&lt;/li&gt;
+            &lt;li&gt;Monitored customer payment details and identified and investigated non-payments, delayed payments, and other irregular&lt;/li&gt;
+            &lt;li&gt;Monitored customer payment details and identified and investigated non-payments, delayed payments, and other irregularities.&lt;/li&gt;
+            &lt;li&gt;Performed recovery and backup of database servers and distributed server backup during emergencies.&lt;/li&gt;
+            &lt;li&gt;Planned and implemented security measures to safeguard vital business data.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/section&gt;
+&lt;section&gt;
+    &lt;h2&gt;ACADEMIC PROJECTS&lt;/h2&gt;
+    &lt;h3&gt;STRESS DETECTION IN IT PROFESSIONALS BY IMAGE PROCESSING USING MACHINE LEARNING&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;The main motive of our project is to detect stress in IT professionals using vivid Machine learning and Image processing techniques.&lt;/li&gt;
+      &lt;li&gt;Our system is an upgraded version of the old stress detection systems, which excluded live detection and personal counseling. This system comprises live detection and periodic analysis of employees, detecting physical as well as mental stress levels and providing them with proper remedies for managing stress through periodic survey forms.&lt;/li&gt;
+      &lt;li&gt;Our system mainly focuses on managing stress, making the working environment healthy and spontaneous for employees, and optimizing their productivity during working hours.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3&gt;Design of a Cloud Storage Security Encryption Algorithm for Power Bidding Systems&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;To solve the problem of poor security and performance caused by traditional encryption algorithms in the cloud data storage of power bidding systems, we propose a hybrid encryption method based on symmetric encryption and asymmetric encryption.&lt;/li&gt;
+      &lt;li&gt;In this method, the plaintext upload file is divided into several blocks according to the proportion. The large file block is encrypted by the symmetric encryption algorithm AES to ensure encryption performance, and the small file block and AES key are encrypted by the asymmetric encryption algorithm ECC to ensure file encryption strength and the security of key transmission.&lt;/li&gt;
+      &lt;li&gt;Finally, the ciphertext file is generated and stored in the cloud storage environment to prevent sensitive file pieces from being stolen or destroyed.&lt;/li&gt;
+      &lt;li&gt;The experimental results show that the hybrid encryption method can improve the anti-attack ability of cloud storage files, ensure the security of file storage, and have high efficiency in file upload and download.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/section&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
